@@ -68,6 +68,70 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_excl {
+            bindings = <&kp EXCL>;
+            key-positions = <1 13>;
+            layers = <0>;
+        };
+
+        combo_at {
+            bindings = <&kp AT>;
+            key-positions = <2 14>;
+            layers = <0>;
+        };
+
+        combo_hash {
+            bindings = <&kp HASH>;
+            key-positions = <3 15>;
+            layers = <0>;
+        };
+
+        combo_dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 16>;
+            layers = <0>;
+        };
+
+        combo_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 17>;
+            layers = <0>;
+        };
+
+        combo_caret {
+            bindings = <&kp CARET>;
+            key-positions = <6 18>;
+            layers = <0>;
+        };
+
+        combo_ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <7 19>;
+            layers = <0>;
+        };
+
+        combo_star {
+            bindings = <&kp ASTRK>;
+            key-positions = <20 8>;
+            layers = <0>;
+        };
+
+        combo_lpar {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <9 21>;
+            layers = <0>;
+        };
+
+        combo_rpar {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <22 10>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
