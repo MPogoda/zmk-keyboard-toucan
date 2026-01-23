@@ -8,14 +8,7 @@
 #define ADJ  3
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri_layer {
-            if-layers = <1 1>;
-            then-layer = <1>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     behaviors {
         left_home_mt: hml {
@@ -145,24 +138,32 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &trans  &trans  &kp LCMD  &kp LEFT_ALT  &kp LSHIFT  &kp LCTRL  &trans  &caps_word  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp INS  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &trans  &trans  &trans  &trans  &kp ENTER  &kp BACKSPACE  &kp DELETE
             >;
+
+            label = "nav";
         };
 
         num {
             bindings = <
 &trans  &kp LBKT  &kp N7  &kp N8  &kp N9  &kp RBKT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SEMI  &kp N4  &kp N5  &kp N6  &kp EQUAL  &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &trans  &trans  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOT  &kp N0  &kp MINUS  &trans  &trans  &trans
             >;
+
+            label = "num";
         };
 
         sym {
             bindings = <
 &trans  &kp LEFT_BRACE  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RIGHT_BRACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COLON  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp PLUS  &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &trans  &trans  &kp TILDE  &kp EXCLAMATION  &kp AT  &kp HASH  &kp PIPE  &trans  &trans  &trans  &trans  &trans  &trans  &kp LPAR  &kp RPAR  &kp UNDERSCORE  &trans  &trans  &trans
             >;
+
+            label = "sym";
         };
 
         fun {
             bindings = <
 &trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK  &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &trans  &trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_APP  &kp SPACE  &kp TAB  &trans  &trans  &trans
             >;
+
+            label = "fun";
         };
     };
 };
