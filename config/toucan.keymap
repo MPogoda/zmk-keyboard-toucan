@@ -130,13 +130,13 @@
         base {
             display-name = "BASE";
             bindings = <
-&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &kp BACKSPACE  &left_home_mt LEFT_GUI A  &left_home_mt LEFT_ALT S  &left_home_mt LEFT_SHIFT D  &left_home_mt LEFT_CONTROL F  &kp G  &kp H  &right_home_mt RIGHT_CONTROL J  &right_home_mt RIGHT_SHIFT K  &right_home_mt RIGHT_ALT L  &right_home_mt RIGHT_GUI SEMICOLON  &kp SQT  &hold_or_skq LSHFT LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC  &mo 1  &kp LCTRL  &kp SPACE  &lt 4 ENTER  &mo 2  &mo 3
+&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &kp BACKSPACE  &left_home_mt LEFT_GUI A  &left_home_mt LEFT_ALT S  &left_home_mt LEFT_SHIFT D  &left_home_mt LEFT_CONTROL F  &kp G  &kp H  &right_home_mt RIGHT_CONTROL J  &right_home_mt RIGHT_SHIFT K  &right_home_mt RIGHT_ALT L  &right_home_mt RIGHT_GUI SEMICOLON  &mt DQT SQT  &hold_or_skq LSHFT LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC  &mo 1  &kp LCTRL  &kp SPACE  &lt 4 ENTER  &mo 2  &mo 3
             >;
         };
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &trans  &trans  &kp LCMD  &kp LEFT_ALT  &kp LSHIFT  &kp LCTRL  &trans  &caps_word  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp INS  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &trans  &trans  &trans  &trans  &kp ENTER  &kp BACKSPACE  &kp DELETE
+&trans  &trans  &trans  &trans  &trans  &trans  &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &kp DELETE  &trans  &kp LCMD  &kp LEFT_ALT  &kp LSHIFT  &kp LCTRL  &trans  &caps_word  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp INS  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &trans  &trans  &trans  &trans  &kp ENTER  &kp BACKSPACE  &trans
             >;
 
             label = "nav";
