@@ -144,7 +144,7 @@
 
         num {
             bindings = <
-&trans  &kp LBKT  &kp N7  &kp N8  &kp N9  &kp RBKT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SEMI  &kp N4  &kp N5  &kp N6  &kp EQUAL  &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &trans  &trans  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp DOT  &kp MINUS  &trans  &trans  &trans
+&trans  &mt LBRC LBKT  &mt AMPS N7  &mt ASTRK N8  &mt LPAR N9  &mt RBRC RBKT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mt COLON SEMI  &mt DOLLAR N4  &mt PERCENT N5  &mt CARET N6  &mt PLUS EQUAL  &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &trans  &trans  &mt TILDE GRAVE  &mt EXCL NUMBER_1  &mt AT N2  &mt POUND N3  &mt PIPE BSLH  &trans  &trans  &trans  &trans  &trans  &trans  &mt LPAR N0  &mt RPAR DOT  &mt UNDER MINUS  &trans  &trans  &trans
             >;
 
             label = "num";
@@ -160,7 +160,7 @@
 
         fun {
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK  &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &trans  &trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_APP  &kp TAB  &kp SPACE  &trans  &trans  &trans
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR  &trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK  &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &trans  &trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_APP  &kp TAB  &kp SPACE  &trans  &trans  &trans
             >;
 
             label = "fun";
