@@ -93,7 +93,7 @@
 
         num {
             bindings = <
-&trans  &kp LBKT  &kp N7  &kp N8  &kp N9  &kp RBKT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp N4  &kp N5  &kp N6  &kp EQUAL  &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &trans  &trans  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0  &kp DOT  &kp MINUS  &trans  &trans  &trans
+&trans  &kp LBKT  &kp N7  &kp N8  &kp N9  &kp RBKT  &trans  &kp LBKT  &kp RBKT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans  &kp DOUBLE_QUOTES  &kp N4  &kp N5  &kp N6  &kp EQUAL  &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &trans  &trans  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH  &trans  &kp GRAVE  &kp EQUAL  &trans  &trans  &trans  &kp N0  &kp DOT  &kp MINUS  &trans  &trans  &trans
             >;
 
             label = "num";
