@@ -35,7 +35,7 @@ static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
  * Draw buffers
  **/
 
-static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], const struct status_state *state) {
+static void draw_top(lv_obj_t *widget, const struct status_state *state) {
     lv_obj_t *canvas = lv_obj_get_child(widget, 0);
     fill_background(canvas);
 
@@ -55,7 +55,7 @@ static void set_battery_status(struct zmk_widget_screen *widget,
                                struct battery_status_state state) {
     widget->state.battery = state.level;
 
-    draw_top(widget->obj, widget->cbuf, &widget->state);
+    draw_top(widget->obj, &widget->state);
 }
 
 static void battery_status_update_cb(struct battery_status_state state) {
@@ -83,7 +83,7 @@ static void set_battery_peripheral_status(struct zmk_widget_screen *widget,
     zmk_split_central_get_peripheral_battery_level(0, &level);
 
     widget->state.battery_p = level;
-    draw_top(widget->obj, widget->cbuf, &widget->state);
+    draw_top(widget->obj, &widget->state);
 }
 
 static void battery_peripheral_status_update_cb(struct battery_peripheral_status_state state) {
@@ -112,7 +112,7 @@ ZMK_SUBSCRIPTION(widget_battery_peripheral_status, zmk_peripheral_battery_state_
 
 static void set_layer_status(struct zmk_widget_screen *widget, struct layer_status_state state) {
     widget->state.layer_index = zmk_keymap_highest_layer_active();
-    draw_top(widget->obj, widget->cbuf3, &widget->state);
+    draw_top(widget->obj, &widget->state);
 }
 
 static void layer_status_update_cb(struct layer_status_state state) {
@@ -143,7 +143,7 @@ static void set_output_status(struct zmk_widget_screen *widget,
     widget->state.active_profile_connected = state->active_profile_connected;
     widget->state.active_profile_bonded = state->active_profile_bonded;
 
-    draw_top(widget->obj, widget->cbuf, &widget->state);
+    draw_top(widget->obj, &widget->state);
 }
 
 static void output_status_update_cb(struct output_status_state state) {
