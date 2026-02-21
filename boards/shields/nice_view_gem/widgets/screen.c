@@ -97,7 +97,7 @@ static struct battery_peripheral_status_state battery_peripheral_status_get_stat
 
 
     return (struct battery_peripheral_status_state){
-        .level = ev->state_of_charge,
+        .level = (ev != NULL) ? ev->state_of_charge : 0,
     };
 }
 
