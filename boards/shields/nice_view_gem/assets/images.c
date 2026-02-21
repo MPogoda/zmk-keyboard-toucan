@@ -504,3 +504,35 @@ const lv_img_dsc_t r_battery_10 = {
     .data_size = 144,
     .data = r_battery_10_map,
 };
+
+/* Charging bolt */
+#ifndef LV_ATTRIBUTE_IMG_BOLT
+#define LV_ATTRIBUTE_IMG_BOLT
+#endif
+
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BOLT uint8_t bolt_map[] = {
+    0x00, 0x00, 0x00, 0xff, /*Color of index 0*/
+    0xff, 0xff, 0xff, 0xff, /*Color of index 1*/
+    0x18, /*    ##   */
+    0x38, /*   ###   */
+    0x78, /*  ####   */
+    0xF8, /* #####   */
+    0xFC, /* ######  */
+    0x7C, /*  #####  */
+    0x38, /*   ###   */
+    0x1C, /*    ###  */
+    0x0C, /*     ##  */
+    0x04, /*      #  */
+    0x00,
+    0x00,
+};
+
+const lv_img_dsc_t bolt = {
+    .header.cf = LV_IMG_CF_INDEXED_1BIT,
+    .header.always_zero = 0,
+    .header.reserved = 0,
+    .header.w = 8,
+    .header.h = 12,
+    .data_size = 20,
+    .data = bolt_map,
+};

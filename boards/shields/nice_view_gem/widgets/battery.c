@@ -34,4 +34,10 @@ static void draw_level(lv_obj_t *canvas, const struct status_state *state) {
 
 void draw_battery_status(lv_obj_t *canvas, const struct status_state *state) {
     draw_level(canvas, state);
+
+    if (state->charging) {
+        lv_draw_img_dsc_t img_dsc;
+        lv_draw_img_dsc_init(&img_dsc);
+        lv_canvas_draw_img(canvas, 30, 11, &bolt, &img_dsc);
+    }
 }
