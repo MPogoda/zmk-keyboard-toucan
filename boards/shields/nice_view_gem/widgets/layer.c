@@ -8,6 +8,7 @@
 #include <zmk/physical_layouts.h>
 #include <zmk/keymap.h>
 #include <zmk/matrix.h>
+#include <zmk/wpm.h>
 
 
 
@@ -26,4 +27,14 @@ void draw_layer_status(lv_obj_t *canvas, const struct status_state *state) {
     }
 
     lv_canvas_draw_text(canvas, 0, 70, SCREEN_WIDTH, &label_dsc, layer_name);
+}
+
+void draw_wpm_status(lv_obj_t *canvas, const struct status_state *state) {
+    lv_draw_label_dsc_t label_dsc;
+    init_label_dsc(&label_dsc, LVGL_FOREGROUND, &quinquefive_8, LV_TEXT_ALIGN_CENTER);
+
+    char wpm_str[16];
+    snprintf(wpm_str, sizeof(wpm_str), "%d WPM", state->wpm);
+
+    lv_canvas_draw_text(canvas, 0, 110, SCREEN_WIDTH, &label_dsc, wpm_str);
 }
