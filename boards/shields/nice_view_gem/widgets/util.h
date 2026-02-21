@@ -6,10 +6,6 @@
 #define SCREEN_WIDTH 144
 #define SCREEN_HEIGHT 168
 
-#define BUFFER_SIZE 168
-#define BUFFER_OFFSET_MIDDLE 0
-#define BUFFER_OFFSET_BOTTOM 0
-
 #define LVGL_BACKGROUND lv_color_black()
 #define LVGL_FOREGROUND lv_color_white()
 
@@ -22,13 +18,11 @@ struct status_state {
     bool active_profile_connected;
     bool active_profile_bonded;
     uint8_t layer_index;
-    const char *layer_label;
 #else
     bool connected;
 #endif
 };
 
-void to_uppercase(char *str);
 void fill_background(lv_obj_t *canvas);
 void init_rect_dsc(lv_draw_rect_dsc_t *rect_dsc, lv_color_t bg_color);
 void init_line_dsc(lv_draw_line_dsc_t *line_dsc, lv_color_t color, uint8_t width);
