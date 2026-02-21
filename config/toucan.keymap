@@ -93,7 +93,7 @@
 
         num {
             bindings = <
-&trans  &kp LBKT  &kp N7  &kp N8  &kp N9  &kp RBKT  &trans  &kp LBKT  &kp RBKT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans  &kp DOUBLE_QUOTES  &kp N4  &kp N5  &kp N6  &kp EQUAL  &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &trans  &trans  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH  &trans  &kp GRAVE  &kp EQUAL  &trans  &trans  &trans  &kp N0  &kp DOT  &kp MINUS  &trans  &trans  &trans
+&trans  &kp PIPE  &kp N7  &kp N8  &kp N9  &kp PLUS  &kp GRAVE  &kp LBKT  &kp RBKT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans  &kp BACKSLASH  &kp N4  &kp N5  &kp N6  &kp EQUAL  &kp TILDE  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &trans  &trans  &trans  &kp N1  &kp N2  &kp N3  &kp DQT  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LT  &kp GT  &trans  &kp N0  &kp DOT  &kp MINUS  &trans  &trans  &trans
             >;
 
             label = "num";
@@ -101,7 +101,7 @@
 
         sym {
             bindings = <
-&trans  &kp LEFT_BRACE  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RIGHT_BRACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COLON  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp PLUS  &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &trans  &trans  &kp TILDE  &kp EXCLAMATION  &kp AT  &kp HASH  &kp PIPE  &trans  &trans  &trans  &trans  &trans  &trans  &kp LPAR  &kp RPAR  &kp UNDERSCORE  &trans  &trans  &trans
+&trans  &trans  &kp AMPS  &kp ASTRK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOLLAR  &kp PERCENT  &kp CARET  &trans  &trans  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &trans  &trans  &trans  &kp EXCLAMATION  &kp AT  &kp HASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp UNDER  &kp MINUS  &trans  &trans  &trans
             >;
 
             label = "sym";
