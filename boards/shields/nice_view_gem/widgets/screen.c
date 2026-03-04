@@ -185,7 +185,7 @@ ZMK_SUBSCRIPTION(widget_output_status, zmk_ble_active_profile_changed);
 static void force_redraw_all_widgets(void) {
     struct zmk_widget_screen *widget;
     SYS_SLIST_FOR_EACH_CONTAINER(&widgets, widget, node) {
-        draw_top(widget->obj, widget->cbuf, &widget->state);
+        draw_top(widget->obj, &widget->state);
     }
 }
 
